@@ -1,20 +1,28 @@
 # Wharehouse Products Distributor Site
 
-<button>Javascript</button>
+|Javascript|
+|:---:|
 
-<button>Jquery</button>
+|Jquery|
+|:---:|
 
-<button>Sass</button>
+|Sass|
+|:---:|
 
-<button>Jade (pug)</button>
+|Jade (Pug)|
+|:---:|
 
-<button>HTML5</button>
+|HTML5|
+|:---:|
 
-<button>CSS3</button>
+|CSS3|
+|:---:|
 
-<button>Flex Display</button>
+|Flex Display|
+|:---:|
 
-<button>Prepros</button>
+|Prepros|
+|:---:|
 
 A stylish, polish E-Commerce site with beauty solution for shopping cart.
 Designed in 2016. Very first project using Jquery, Sass, and Jade (now renamed to pug).
