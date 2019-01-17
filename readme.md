@@ -25,6 +25,7 @@
 |:---:|
 
 A stylish, polish E-Commerce site with beauty solution for shopping cart.
-Designed in 2016. Very first project using Jquery, Sass, and Jade (now renamed to pug).
+Very first project using Jquery, Sass, and Jade (now renamed to pug).
 
+Designed in 2016.
 ![](./img/page.gif)
