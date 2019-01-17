@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Document
+  //estilos css
+  link(rel="stylesheet", href="css/styles.css")
+  //font awesome
+  link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+  //bootstrap css
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css', integrity='sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy', crossorigin='anonymous')
+body
+  header
+    .container-fluid
+      .row.align-items-center#headerup
+        .col-md-3.d-none.d-md-block
+          img.align-self-center#logo(src="logo.png", alt="alt")
+        .col-md-9.col-lg-6.d-print-none
+          .form-group.align-self-center#barraBusqueda
+            label.sr-only(for="#busqueda") busqueda
+            .input-group(container:"body")
+              input.form-control#busqueda(type="search",name="busqueda",placeholder="buscar productos, marcas y más...")
+              .input-group-btn#buscar
+                button.btn.btn-default#botonbusqueda(type='submit')
+                  i.fa.fa-search
+        .col-lg-3.d-none.d-lg-block
+          .align-self-center#slogan La compra inteligente
+    nav.navbar.navbar-expand-md.navbar-dark.justify-content-between.navbar-static-top
+      a.d-xs-block.d-sm-block.d-md-none.navbar-brand(href='#') 
+        img.d-inline-block.align-top(src='logo.png', width='150', height='30', alt='')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarText.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              |Categorias
+            .dropdown-menu#categorias(aria-labelledby='navbarDropdown')
+          li.nav-item
+            a.nav-link(href='#') Ofertas de la semana
+          li.nav-item
+            a.nav-link.d-xs-block.d-md-none(href='#') Registrate | Ingresá
+      button.d-none.d-md-block.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModal')
+        | Registrate | Ingresá
+      // Modal
+      #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              h5#exampleModalLabel.modal-title Ingreso
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+            .modal-body
+              form
+                .form-group
+                  label(for='exampleInputEmail1') Email
+                  input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Ingresa tu email')
+                  small#emailHelp.form-text.text-muted Nunca daremos tu direccion a nadie.
+                .form-group
+                  label(for='exampleInputPassword1') Contraseña
+                  input#exampleInputPassword1.form-control(type='password', placeholder='Ingresa tu contraseña')
+                .form-check
+                  input#exampleCheck1.form-check-input(type='checkbox')
+                  label.form-check-label(for='exampleCheck1') Recordarme
+                button.btn.btn-primary(type='submit') Ingresar
+            .modal-footer
+              button.btn.btn-secondary(type='button', data-dismiss='modal') Cerrar
+  .container-fluid#fondo
+    #carrito
+    #shopping
+      //- #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      //-   ol.carousel-indicators
+      //-     li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+      //-     li(data-target='#carouselExampleIndicators', data-slide-to='1')
+      //-     li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      //-   .carousel-inner
+      //-     .carousel-item.active
+      //-       img.d-block.w-100(src='...', alt='First slide')
+      //-     .carousel-item
+      //-       img.d-block.w-100(src='...', alt='Second slide')
+      //-     .carousel-item
+      //-       img.d-block.w-100(src='...', alt='Third slide')
+      //-   a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+      //-     span.carousel-control-prev-icon(aria-hidden='true')
+      //-     span.sr-only Previous
+      //-   a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+      //-     span.carousel-control-next-icon(aria-hidden='true')
+      //-     span.sr-only Next
+      .container 
+        .row#productos  
+  //jquery y bootstrap
+  script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+  //codigos js
+  script(src='js/array.js')
+  script(src='js/code.js')
+  
