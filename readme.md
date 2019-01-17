@@ -1,6 +1,5 @@
 # Wharehouse Products Distributor Site
-|Javascript|
-|--|
+<button>Javascript</button>
 <button>Jquery</button>
 <button>Sass</button>
 <button>Jade (pug)</button>
