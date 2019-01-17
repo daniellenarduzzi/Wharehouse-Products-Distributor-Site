@@ -18,7 +18,7 @@
 |CSS3|
 |:---:|
 
-|Flex Display|
+|Display Flex|
 |:---:|
 
 |Prepros|
